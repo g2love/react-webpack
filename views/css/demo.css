@@ -8,3 +8,8 @@
 body{
 	background-color: #ffc;
 }
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}

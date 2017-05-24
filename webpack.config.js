@@ -24,7 +24,10 @@ var config1 = {
     {
         test: /\.(css)$/,
         loader: ExtractTextPlugin.extract('style-loader','css-loader')
-    },
+    },{
+      test:/\.(png|jpg|jpeg)$/,
+      loader:'file-loader?name=images/[hash:8]-[name].[ext]'
+    }
     ]
   },
   plugins:[
@@ -65,7 +68,10 @@ var config2 = {
     {
         test: /\.(css)$/,
         loader: ExtractTextPlugin.extract('style-loader','css-loader')
-    },
+    },{
+      test:/\.(png|jpg|jpeg)$/,
+      loader:'file-loader?name=images/[hash:8]-[name].[ext]'
+    }
     ]
   },
   plugins:[
